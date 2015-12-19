@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="calendar"></div>
+		<script type="text/javascript" src="calendarize.js"></script>
+		<script type="text/javascript">
+			var $calendar = document.getElementById("calendar");
+			var currentYear = new Date().getFullYear();
+			var calendarize = new Calendarize();
+			calendarize.buildYearCalendar($calendar, currentYear);
+		</script>
+	</body>
+</html>
